@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostProcessConan(ConanFile):
     name = "boost_process"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-process"
+    url = "https://github.com/bincrafters/conan-boost_process"
 
     lib_short_names = ["process"]
     is_header_only = True
