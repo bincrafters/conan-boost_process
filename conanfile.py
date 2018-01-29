@@ -8,7 +8,8 @@ class BoostProcessConan(ConanFile):
     name = "boost_process"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_process"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["process"]
     is_header_only = True
 
@@ -16,20 +17,20 @@ class BoostProcessConan(ConanFile):
         self.info.header_only()
 
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_algorithm/1.66.0@bincrafters/testing",
-        "boost_asio/1.66.0@bincrafters/testing",
-        "boost_config/1.66.0@bincrafters/testing",
-        "boost_core/1.66.0@bincrafters/testing",
-        "boost_filesystem/1.66.0@bincrafters/testing",
-        "boost_fusion/1.66.0@bincrafters/testing",
-        "boost_iterator/1.66.0@bincrafters/testing",
-        "boost_move/1.66.0@bincrafters/testing",
-        "boost_optional/1.66.0@bincrafters/testing",
-        "boost_system/1.66.0@bincrafters/testing",
-        "boost_tokenizer/1.66.0@bincrafters/testing",
-        "boost_type_index/1.66.0@bincrafters/testing",
-        "boost_winapi/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.66.0@bincrafters/stable",
+        "boost_algorithm/1.66.0@bincrafters/stable",
+        "boost_asio/1.66.0@bincrafters/stable",
+        "boost_config/1.66.0@bincrafters/stable",
+        "boost_core/1.66.0@bincrafters/stable",
+        "boost_filesystem/1.66.0@bincrafters/stable",
+        "boost_fusion/1.66.0@bincrafters/stable",
+        "boost_iterator/1.66.0@bincrafters/stable",
+        "boost_move/1.66.0@bincrafters/stable",
+        "boost_optional/1.66.0@bincrafters/stable",
+        "boost_system/1.66.0@bincrafters/stable",
+        "boost_tokenizer/1.66.0@bincrafters/stable",
+        "boost_type_index/1.66.0@bincrafters/stable",
+        "boost_winapi/1.66.0@bincrafters/stable"
     )
 
     # BEGIN
@@ -37,7 +38,7 @@ class BoostProcessConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_66_0"
     license = "BSL-1.0"
     short_paths = True
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.66.0@bincrafters/stable"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
