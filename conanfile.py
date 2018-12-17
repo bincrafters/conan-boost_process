@@ -4,7 +4,7 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.68.0@bincrafters/testing")
+base = python_requires("boost_base/1.69.0@bincrafters/testing")
 
 class BoostProcessConan(base.BoostBaseConan):
     name = "boost_process"
@@ -26,4 +26,3 @@ class BoostProcessConan(base.BoostBaseConan):
         "boost_type_index",
         "boost_winapi"
     ]
-
