@@ -12,7 +12,7 @@ class BoostProcessConan(base.BoostBaseConan):
     lib_short_names = ["process"]
     header_only_libs = ["process"]
     b2_requires = [
-		"boost_algorithm",
+        "boost_algorithm",
         "boost_asio",
         "boost_config",
         "boost_core",
@@ -21,10 +21,10 @@ class BoostProcessConan(base.BoostBaseConan):
         "boost_iterator",
         "boost_move",
         "boost_optional",
-        "boost_package_tools",
         "boost_system",
         "boost_tokenizer",
         "boost_type_index",
         "boost_winapi"
-	]
-	
+    ]
+
+
