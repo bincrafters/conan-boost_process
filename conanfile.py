@@ -16,20 +16,20 @@ class BoostProcessConan(ConanFile):
         self.info.header_only()
 
     requires = (
-        "boost_algorithm/1.67.0@bincrafters/testing",
-        "boost_asio/1.67.0@bincrafters/testing",
-        "boost_config/1.67.0@bincrafters/testing",
-        "boost_core/1.67.0@bincrafters/testing",
-        "boost_filesystem/1.67.0@bincrafters/testing",
-        "boost_fusion/1.67.0@bincrafters/testing",
-        "boost_iterator/1.67.0@bincrafters/testing",
-        "boost_move/1.67.0@bincrafters/testing",
-        "boost_optional/1.67.0@bincrafters/testing",
-        "boost_package_tools/1.67.0@bincrafters/testing",
-        "boost_system/1.67.0@bincrafters/testing",
-        "boost_tokenizer/1.67.0@bincrafters/testing",
-        "boost_type_index/1.67.0@bincrafters/testing",
-        "boost_winapi/1.67.0@bincrafters/testing"
+        "boost_algorithm/1.67.0@bincrafters/stable",
+        "boost_asio/1.67.0@bincrafters/stable",
+        "boost_config/1.67.0@bincrafters/stable",
+        "boost_core/1.67.0@bincrafters/stable",
+        "boost_filesystem/1.67.0@bincrafters/stable",
+        "boost_fusion/1.67.0@bincrafters/stable",
+        "boost_iterator/1.67.0@bincrafters/stable",
+        "boost_move/1.67.0@bincrafters/stable",
+        "boost_optional/1.67.0@bincrafters/stable",
+        "boost_package_tools/1.67.0@bincrafters/stable",
+        "boost_system/1.67.0@bincrafters/stable",
+        "boost_tokenizer/1.67.0@bincrafters/stable",
+        "boost_type_index/1.67.0@bincrafters/stable",
+        "boost_winapi/1.67.0@bincrafters/stable"
     )
 
     # BEGIN
@@ -38,7 +38,7 @@ class BoostProcessConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_67_0"
     license = "BSL-1.0"
     short_paths = True
-    build_requires = "boost_generator/1.67.0@bincrafters/testing"
+    build_requires = "boost_generator/1.67.0@bincrafters/stable"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
