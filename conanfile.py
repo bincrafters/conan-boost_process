@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.69.0@bincrafters/stable")
 
 class BoostProcessConan(base.BoostBaseConan):
     name = "boost_process"
+    version = "1.69.0"
     url = "https://github.com/bincrafters/conan-boost_process"
     lib_short_names = ["process"]
     header_only_libs = ["process"]
